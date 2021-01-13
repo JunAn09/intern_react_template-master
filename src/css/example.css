@@ -13,3 +13,8 @@ label{
 .form-control{
     font-size: small;
 }
+
+.font-ex{
+    font-size: xx-large;
+    text-align: center;
+}

@@ -29,7 +29,8 @@ export default class Home extends React.Component {
     this.setState({ userName: event.target.userName.value, age: event.target.age.value, phone: event.target.phone.value, email: event.target.email.value }, () => {
       alert("Name: " + this.state.userName + "\nAge: " + this.state.age + "\nContact No.: " + this.state.phone + "\nEmail: " + this.state.email 
         + "\nGender: " + this.state.gender + "\nInterrest in: " + this.state.interest)
-    })
+        this.props.history.push("End");
+    })  
   }
   returnValue = value =>{
     this.setState({gender: value})
@@ -97,7 +98,7 @@ export default class Home extends React.Component {
 
 
 // create an example class
-class Example extends React.Component {
+/*class Example extends React.Component {
   // we need to add props here as this class will receive props
   constructor(props) {
     super(props);
@@ -123,4 +124,4 @@ class Example extends React.Component {
       <span>{this.state.label_text}</span>
     )
   }
-}
+}*/
